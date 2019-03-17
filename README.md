@@ -20,8 +20,10 @@ Our implementation is adapted from [the PyTorch version of SSD](https://github.c
     ```Shell
     sh data/scripts/Oxford_hand_dataset.sh
     ```
-
-
+4. Compile the NMS code (from [ruotianluo/pytorch-faster-rcnn](https://github.com/ruotianluo/pytorch-faster-rcnn/tree/0.3)).
+    ```Shell
+    sh layers/src/make.sh
+    ```
 
 
 ### Training

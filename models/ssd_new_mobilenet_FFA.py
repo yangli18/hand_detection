@@ -209,7 +209,6 @@ class SSD(nn.Module):
 
         # bottom-up
         # all_modules = self.mobilenet._modules.items() + self.extras._modules.items()
-        # all_modules = ((self.mobilenet._modules.copy()).update(self.extras._modules)).items()
         all_modules = self.mobilenet._modules.copy()
         all_modules.update(self.extras._modules)
         all_modules = all_modules.items()

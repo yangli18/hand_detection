@@ -194,7 +194,10 @@ class SSD(nn.Module):
         conf = list()
 
         # apply vgg up to conv4_3 relu
-        all_modules = self.mobilenet._modules.items() + self.extras._modules.items()
+        #all_modules = self.mobilenet._modules.items() + self.extras._modules.items()
+        all_modules = self.mobilenet._modules.copy()
+        all_modules.update(self.extras._modules)
+        all_modules = all_modules.items()
         
         for name, module in all_modules:
             x = module(x)
@@ -210,13 +213,13 @@ class SSD(nn.Module):
         conf = torch.cat([o.view(o.size(0), -1) for o in conf], 1)
         if self.phase == "test":
             output = self.detect(
-                loc.view(loc.size(0), -1, 4),                   # loc preds
+                loc.view(loc.size(0), -1, 10),                   # loc preds
                 self.softmax(conf.view(-1, self.num_classes)),  # conf preds
                 self.priors.type(type(x.data)).cuda()                  # default boxes
             )
         else:
             output = (
-                loc.view(loc.size(0), -1, 4),
+                loc.view(loc.size(0), -1, 10),
                 conf.view(conf.size(0), -1, self.num_classes),
                 self.priors
             )
@@ -237,7 +240,7 @@ class SSD(nn.Module):
 
         for k, in_channels in enumerate(self.src_channels):
             loc_layers += [nn.Conv2d(in_channels,
-                                    cfg[k] * 4, kernel_size=3, padding=1)]
+                                    cfg[k] * 10, kernel_size=3, padding=1)]
             conf_layers += [nn.Conv2d(in_channels,
                             cfg[k] * num_classes, kernel_size=3, padding=1)]
 
