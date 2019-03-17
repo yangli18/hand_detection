@@ -1,0 +1,66 @@
+Loading base network...
+Initializing weights...
+Loading Dataset...
+Training SSD_mobilenet ssd_new_mobilenet_FFA on Oxford hand dataset with multibox loss
+Data augmentaion: v1
+Timer: 3.5331 sec.
+iter 0 || lr: 0.001000  || loc_loss: 24.5016  || cls_loss: 11.6545  Saving state, iter: 0
+Timer: 0.0673 sec.
+iter 100 || lr: 0.001000  || loc_loss: 11.8161  || cls_loss: 3.2441  Timer: 0.0719 sec.
+iter 200 || lr: 0.001000  || loc_loss: 12.8805  || cls_loss: 2.6718  /home/Disk4T/lyang/anaconda3/envs/pytorch0.3/lib/python3.6/site-packages/torch/autograd/_functions/tensor.py:447: UserWarning: mask is not broadcastable to self, but they have the same number of elements.  Falling back to deprecated pointwise behavior.
+  return tensor.masked_fill_(mask, value)
+Timer: 0.0622 sec.
+iter 300 || lr: 0.001000  || loc_loss: 11.7321  || cls_loss: 2.5125  Timer: 0.0695 sec.
+iter 400 || lr: 0.001000  || loc_loss: 10.4065  || cls_loss: 2.4818  Timer: 0.0689 sec.
+iter 500 || lr: 0.001000  || loc_loss: 8.9932  || cls_loss: 2.4296  Timer: 0.0680 sec.
+iter 600 || lr: 0.001000  || loc_loss: 8.3266  || cls_loss: 2.3606  Timer: 0.0716 sec.
+iter 700 || lr: 0.001000  || loc_loss: 8.7521  || cls_loss: 2.3281  Timer: 0.0641 sec.
+iter 800 || lr: 0.001000  || loc_loss: 8.4226  || cls_loss: 2.3068  Timer: 0.0910 sec.
+iter 900 || lr: 0.001000  || loc_loss: 7.1855  || cls_loss: 2.3193  Timer: 0.0610 sec.
+iter 1000 || lr: 0.001000  || loc_loss: 7.6891  || cls_loss: 2.2388  Timer: 0.0712 sec.
+iter 1100 || lr: 0.001000  || loc_loss: 6.7648  || cls_loss: 2.2670  Timer: 0.0815 sec.
+iter 1200 || lr: 0.001000  || loc_loss: 7.3132  || cls_loss: 2.2002  Timer: 0.0675 sec.
+iter 1300 || lr: 0.001000  || loc_loss: 7.0347  || cls_loss: 2.2260  Timer: 0.0780 sec.
+iter 1400 || lr: 0.001000  || loc_loss: 8.4281  || cls_loss: 2.3517  Timer: 0.0794 sec.
+iter 1500 || lr: 0.001000  || loc_loss: 7.7244  || cls_loss: 2.2940  Timer: 0.0716 sec.
+iter 1600 || lr: 0.001000  || loc_loss: 6.3960  || cls_loss: 2.1839  Timer: 0.0809 sec.
+iter 1700 || lr: 0.001000  || loc_loss: 7.9438  || cls_loss: 2.2732  Timer: 0.0770 sec.
+iter 1800 || lr: 0.001000  || loc_loss: 5.8396  || cls_loss: 2.2384  Timer: 0.0650 sec.
+iter 1900 || lr: 0.001000  || loc_loss: 6.4043  || cls_loss: 2.3190  Timer: 0.0696 sec.
+iter 2000 || lr: 0.001000  || loc_loss: 7.0495  || cls_loss: 2.1970  Timer: 0.0940 sec.
+iter 2100 || lr: 0.001000  || loc_loss: 6.2278  || cls_loss: 2.1983  Timer: 0.0680 sec.
+iter 2200 || lr: 0.001000  || loc_loss: 7.2685  || cls_loss: 2.3540  Timer: 0.0752 sec.
+iter 2300 || lr: 0.001000  || loc_loss: 7.1972  || cls_loss: 2.2636  Timer: 0.0891 sec.
+iter 2400 || lr: 0.001000  || loc_loss: 9.0849  || cls_loss: 2.4284  Timer: 0.0651 sec.
+iter 2500 || lr: 0.001000  || loc_loss: 7.9951  || cls_loss: 2.2860  Timer: 0.0785 sec.
+iter 2600 || lr: 0.001000  || loc_loss: 6.2936  || cls_loss: 2.1599  Timer: 0.0857 sec.
+iter 2700 || lr: 0.001000  || loc_loss: 8.6585  || cls_loss: 2.3330  Timer: 0.0677 sec.
+iter 2800 || lr: 0.001000  || loc_loss: 8.3146  || cls_loss: 2.3903  Timer: 0.0725 sec.
+iter 2900 || lr: 0.001000  || loc_loss: 6.3881  || cls_loss: 2.1339  Timer: 0.0657 sec.
+iter 3000 || lr: 0.001000  || loc_loss: 6.8978  || cls_loss: 2.2890  Timer: 0.0782 sec.
+iter 3100 || lr: 0.001000  || loc_loss: 6.0112  || cls_loss: 2.1525  Timer: 0.0681 sec.
+iter 3200 || lr: 0.001000  || loc_loss: 5.7168  || cls_loss: 2.1628  Timer: 0.0676 sec.
+iter 3300 || lr: 0.001000  || loc_loss: 7.4262  || cls_loss: 2.2876  Timer: 0.0638 sec.
+iter 3400 || lr: 0.001000  || loc_loss: 5.6741  || cls_loss: 2.3488  Timer: 0.0735 sec.
+iter 3500 || lr: 0.001000  || loc_loss: 6.8599  || cls_loss: 2.2880  Timer: 0.0640 sec.
+iter 3600 || lr: 0.001000  || loc_loss: 6.5731  || cls_loss: 2.2694  Timer: 0.0664 sec.
+iter 3700 || lr: 0.001000  || loc_loss: 5.0653  || cls_loss: 2.1921  Timer: 0.0684 sec.
+iter 3800 || lr: 0.001000  || loc_loss: 5.2016  || cls_loss: 1.9857  Timer: 0.0683 sec.
+iter 3900 || lr: 0.001000  || loc_loss: 6.7729  || cls_loss: 2.3316  Timer: 0.0739 sec.
+iter 4000 || lr: 0.001000  || loc_loss: 5.0812  || cls_loss: 2.0827  Timer: 0.0767 sec.
+iter 4100 || lr: 0.001000  || loc_loss: 6.9828  || cls_loss: 2.1328  Timer: 0.0668 sec.
+iter 4200 || lr: 0.001000  || loc_loss: 6.1014  || cls_loss: 2.2199  Timer: 0.0679 sec.
+iter 4300 || lr: 0.001000  || loc_loss: 7.7775  || cls_loss: 2.2952  Timer: 0.0706 sec.
+iter 4400 || lr: 0.001000  || loc_loss: 6.8321  || cls_loss: 2.0839  Timer: 0.0755 sec.
+iter 4500 || lr: 0.001000  || loc_loss: 4.8347  || cls_loss: 2.1429  Timer: 0.0671 sec.
+iter 4600 || lr: 0.001000  || loc_loss: 6.0079  || cls_loss: 2.1083  Timer: 0.0734 sec.
+iter 4700 || lr: 0.001000  || loc_loss: 5.8158  || cls_loss: 2.3005  Timer: 0.0750 sec.
+iter 4800 || lr: 0.001000  || loc_loss: 8.3992  || cls_loss: 2.3406  Timer: 0.0779 sec.
+iter 4900 || lr: 0.001000  || loc_loss: 6.5365  || cls_loss: 2.1857  Timer: 0.0737 sec.
+iter 5000 || lr: 0.001000  || loc_loss: 5.9183  || cls_loss: 2.2581  Saving state, iter: 5000
+Timer: 0.0749 sec.
+iter 5100 || lr: 0.001000  || loc_loss: 5.7882  || cls_loss: 2.2358  Timer: 0.0650 sec.
+iter 5200 || lr: 0.001000  || loc_loss: 6.5671  || cls_loss: 2.1832  Timer: 0.0806 sec.
+iter 5300 || lr: 0.001000  || loc_loss: 5.2773  || cls_loss: 2.3376  Timer: 0.0685 sec.
+iter 5400 || lr: 0.001000  || loc_loss: 4.6842  || cls_loss: 1.9546  Timer: 0.0682 sec.
+iter 5500 || lr: 0.001000  || loc_loss: 5.3367  || cls_loss: 2.2792  
