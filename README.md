@@ -2,7 +2,7 @@
 This project utilizes a modified MobileNet in company with the [SSD](https://github.com/weiliu89/caffe/tree/ssd) framework to achieve a robust and fast detection of hand location and orientation. 
 Our implementation is adapted from [the PyTorch version of SSD](https://github.com/amdegroot/ssd.pytorch) and [MobileNet](https://github.com/ruotianluo/pytorch-mobilenet-from-tf).
 
-<img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010174_hand.svg" height=236><img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010061_hand.svg" height=236><img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010210_hand.svg" height=236>
+<img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010174_hand.svg" height=226><img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010061_hand.svg" height=226><img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010210_hand.svg" height=226>
 
 ### Contents
 1. [Preparation](#preparation)
