@@ -33,8 +33,10 @@ Train the detection model on the Oxford hand dataset.
 ```Shell
 python train.py 2>&1 | tee log/train.log
 ```
-* Note that a pre-trained MobileNet is already put in the `weights` dir. 
+* Trained with data augmentation v2, our detection model reaches over **86%** average precision (AP) on the Oxford hand dataset. We provide the trained model in the `weights` dir.
+* For the convenience of training, a pre-trained MobileNet is put in the `weights` dir. 
 You can also download it from [here](https://github.com/ruotianluo/pytorch-mobilenet-from-tf).
+ 
 
 ### Evaluation
 
