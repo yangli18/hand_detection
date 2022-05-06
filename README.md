@@ -1,16 +1,17 @@
 # Hand Detection and Orientation Estimation
 This project utilizes a modified MobileNet in company with the [SSD](https://github.com/weiliu89/caffe/tree/ssd) framework to achieve a robust and fast detection of hand location and orientation. 
-Our implementation is adapted from [the PyTorch version of SSD](https://github.com/amdegroot/ssd.pytorch) and [MobileNet](https://github.com/ruotianluo/pytorch-mobilenet-from-tf).
+Our implementation is based on [the PyTorch version of SSD](https://github.com/amdegroot/ssd.pytorch) and [MobileNet](https://github.com/ruotianluo/pytorch-mobilenet-from-tf).
 
-<img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010174_hand.svg" height=226><img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010061_hand.svg" height=226><img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010210_hand.svg" height=226>
+<img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010174_hand.svg" height=216><img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010061_hand.svg" height=216><img src="https://github.com/yangli18/hand_detection/blob/master/data/results/demo/010210_hand.svg" height=216>
 
-### Contents
+## Contents
 1. [Preparation](#preparation)
 2. [Training](#training)
-3. [Evaluation](#Evaluation)
+3. [Evaluation](#evaluation)
+4. [Citation](#citation)
 
 
-### Preparation
+## Preparation
 1. Due to some compatibility issues, we recommend to install PyTorch 0.3.0 and Python 3.6.8, which our project currently supports. 
 
 2. Get the code. 
@@ -27,7 +28,7 @@ Our implementation is adapted from [the PyTorch version of SSD](https://github.c
     ```
 
 
-### Training
+## Training
 
 Train the detection model on the Oxford hand dataset. 
 ```Shell
@@ -38,7 +39,7 @@ python train.py 2>&1 | tee log/train.log
 You can also download it from [here](https://github.com/ruotianluo/pytorch-mobilenet-from-tf).
  
 
-### Evaluation
+## Evaluation
 
 1. Evaluate the trained detection model.
     ```Shell
@@ -52,3 +53,27 @@ You can also download it from [here](https://github.com/ruotianluo/pytorch-mobil
     python eval_speed.py --trained_model weights/ssd_new_mobilenet_FFA.pth --version ssd_new_mobilenet_FFA
     ```   
 
+
+## Citation
+If you find our code useful, please cite our paper. 
+```
+@inproceedings{yang2018light,
+  title={A Light CNN based Method for Hand Detection and Orientation Estimation},
+  author={Yang, Li and Qi, Zhi and Liu, Zeheng and Zhou, Shanshan and Zhang, Yang and Liu, Hao and Wu, Jianhui and Shi, Longxing},
+  booktitle={2018 24th International Conference on Pattern Recognition (ICPR)},
+  pages={2050--2055},
+  year={2018},
+  organization={IEEE}
+}
+
+@article{yang2019embedded,
+  title={An embedded implementation of CNN-based hand detection and orientation estimation algorithm},
+  author={Yang, Li and Qi, Zhi and Liu, Zeheng and Liu, Hao and Ling, Ming and Shi, Longxing and Liu, Xinning},
+  journal={Machine Vision and Applications},
+  volume={30},
+  number={6},
+  pages={1071--1082},
+  year={2019},
+  publisher={Springer}
+}
+```
